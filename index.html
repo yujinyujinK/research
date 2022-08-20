@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+  <meta charset="UTF-8">
+    <title>Katex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  </head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Research | Berkeley RDI</title>
@@ -39,8 +46,31 @@
         </div>
       </div>
     </nav>
+
+    
+
     <div class="bg-secondary py-5">
       <div class="container">
+
+        <div class="card">
+          <div class="row align-items-center">
+            <div class="col-lg-5 order-lg-last">
+              <div class="card-img" style="background-image: url('img/zkp.png')">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="p-4">
+                <h4>Orion: Zero Knowledge Proof with Linear Prover Time</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Tiancheng Xie &middot; Yupeng Zhang &middot; Dawn Song &nbsp;|&nbsp; https://eprint.iacr.org/2022/1010</h6>
+                <p class="text-justify">Zero-knowledge proof is a powerful cryptographic primitive that has found various applications in the real world. However, existing schemes with succinct proof size suffer from a high overhead on the proof generation time that is super-linear in the size of the statement represented as an arithmetic circuit, limiting their efficiency and scalability in practice. In this paper, we present Orion, a new zero-knowledge argument system that achieves \(O(N)\) prover time of field operations and hash functions and \(O(\log^2 N)\) proof size. Orion is concretely efficient and our implementation shows that the prover time is 3.09s and the proof size is 1.5MB for a circuit with \(2^{20}\) multiplication gates. The prover time is the fastest among all existing succinct proof systems, and the proof size is an order of magnitude smaller than a recent scheme proposed in Golovnev et al. 2021. 
+	
+                  In particular, we develop two new techniques leading to the efficiency improvement. (1) We propose a new algorithm to test whether a random bipartite graph is a lossless expander graph or not based on the densest subgraph algorithm. It allows us to sample lossless expanders with an overwhelming probability. The technique improves the efficiency and/or security of all existing zero-knowledge argument schemes with a linear prover time. The testing algorithm based on densest subgraph may be of independent interest for other applications of expander graphs. (2) We develop an efficient proof composition scheme, code switching, to reduce the proof size from square root to polylogarithmic in the size of the computation. The scheme is built on the encoding circuit of a linear code and shows that the witness of a second zero-knowledge argument is the same as the message in the linear code. The proof composition only introduces a small overhead on the prover time.</p>
+                <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/orion"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://eprint.iacr.org/2022/1010" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/sunblaze-ucb/Orion" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="card">
           <div class="row align-items-center">
             <div class="col-lg-4">

@@ -67,7 +67,26 @@
     <div class="bg-secondary py-5">
       <div class="container">
 
-          <div class="card">
+        <div class="card">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <div class="p-4">
+                  <h4>ItyFuzz: Snapshot-Based Fuzzer for Smart Contract</h4>
+                  <h6 class="text-secondary">2023 &nbsp;|&nbsp; Chaofan Shou &middot; Shangyin Tan &middot; Koushik Sen |&nbsp; https://arxiv.org/pdf/2306.17135.pdf</h6>
+                  <p class="text-justify">We introduce a novel snapshot-based fuzzer ItyFuzz for testing smart contracts. In ItyFuzz, instead of storing sequences of transactions and mutating from them, we snapshot states and singleton transactions. To explore interesting states, ItyFuzz introduces a dataflow waypoint mechanism to identify states with more potential momentum. ItyFuzz also incorporates comparison waypoints to prune the space of states. Because ItyFuzz has second-level response time to test a smart contract, it can be used for on-chain testing, which has many benefits compared to local development testing. ItyFuzz has been evaluated on real and hacked DeFi projects and shown to surpass existing fuzzers.&hellip;</p>
+                  <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://arxiv.org/pdf/2306.17135.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/fuzzland/ityfuzz" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card-img" style="background-image: url('img/ityfuzz.png'); background-size: contain">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card mt-4">
             <div class="row align-items-center">
               <div class="col-lg-4">
                 <div class="card-img" style="background-image: url('img/epg-traversal.png'); background-size: contain">

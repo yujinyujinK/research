@@ -34,10 +34,14 @@
                 Metaverse Research
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metadata">MetaData</a></li>
-                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaguard">MetaGuard</a></li>
-                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse-sok">Privacy SoK</a></li>
-                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/vr-identification">Identification</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/metadata">MetaData</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/metaguard">MetaGuard</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/sok">Privacy SoK</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/identification">Identification</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/profiling">Profiling</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/boxrr-23">BOXRR Dataset</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/article">S&P Article</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse/dmm">Motion Masking</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse">View All</a></li>
               </ul>
@@ -67,64 +71,119 @@
     <div class="bg-secondary py-5">
       <div class="container">
 
-        <div class="card">
+        <div class="card mt-4">
           <div class="row align-items-center">
-            <div class="col-lg-4 order-lg-last">
-              <div class="card-img" style="background-image: url('img/pianist-prot.png'); background-size: contain">
+            <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
+              <div class="card-img" style="min-height: 310px; background-image: url('img/thumbnail.png')">
               </div>
             </div>
             <div class="col-lg-8">
               <div class="p-4">
-                <h4>Pianist: Scalable zkRollups via Fully Distributed Zero-Knowledge Proofs</h4>
-                <h6 class="text-secondary">2024 &nbsp;|&nbsp; Tianyi Liu &middot; Tiancheng Xie &middot; Jiaheng Zhang
-                  &middot; Dawn Song &middot; Yupeng Zhang
-                  &nbsp;|&nbsp; S&P 2024</h6>
-                <p class="text-justify">
-                  In this work, we improve the scalability of these techniques by proposing new schemes of fully
-                  distributed ZKPs. Our schemes can improve the efficiency and the scalability of ZKPs using multiple
-                  machines, while the communication among the machines is minimal. With our schemes, the ZKP generation
-                  can be distributed to multiple participants in a model similar to the mining pools. Our protocols are
-                  based on Plonk, an efficient zero-knowledge proof system with a universal trusted setup. The first
-                  protocol is for data-parallel circuits.
-                  For computation of \(M\) sub-circuits of size \(T\) each, using \(M\) machines, the prover time is
-                  \(O(T\log
-                  T
-                  + M \log M)\), while the prover time of the original Plonk on a single machine is \(O(MT\log (MT))\).
-                  Our
-                  protocol incurs only \(O(1)\) communication per machine, and the proof size and verifier time are both
-                  \(O(1)\), the same as the original Plonk. Moreover, we show that with minor modifications, our second
-                  protocol can support general circuits with arbitrary connections while preserving the same proving,
-                  verifying, and communication complexity. The technique is general and may be of independent interest for
-                  other applications of ZKP.
-                </p>
-                <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/zkp/Pianist/pianist.html"><i
-                      class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a
-                    class="btn btn-secondary btn-sm" href="https://eprint.iacr.org/2023/1271"><i class="fa fa-file-lines"></i>&nbsp; Read
-                    Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/dreamATD/pianist-gnark"
-                    target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+                <h4>Deep Motion Masking for Secure, Usable, and Scalable Real-Time Anonymization of Virtual Reality Motion Data</h4>
+                <h6 class="text-secondary">2023 &nbsp;|&nbsp; Vivek Nair &middot; Wenbo Guo &middot; James F. O’Brien &middot; Louis Rosenberg &middot; Dawn Song | arXiv.2311.05090</h6>
+                <p class="text-justify">Recent studies have demonstrated that the motion tracking "telemetry" data used by nearly all VR applications is as uniquely identifiable as a fingerprint scan. Although previous attempts have been made to anonymize VR motion data, we present in this paper a state-of-the-art VR identification model that can convincingly bypass known defensive countermeasures. We then propose a new "deep motion masking" approach that scalably facilitates the real-time anonymization of VR telemetry data&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaverse/dmm"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2311.05090" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/metaguard/metaguardplus" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="card-img" style="background-image: url('img/motion-study.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Truth in Motion: The Unprecedented Risks and Opportunities of Extended Reality Motion Data</h4>
+                <h6 class="text-secondary">2023 &nbsp;|&nbsp; Vivek Nair &middot; Louis Rosenberg &middot; James F. O’Brien &middot; Dawn Song  &nbsp;|&nbsp; doi.org/10.48550/arXiv.2306.06459</h6>
+                <p class="text-justify">Motion tracking "telemetry" data lies at the core of nearly all modern extended reality and metaverse experiences. While generally presumed innocuous, recent studies have demonstrated that motion data actually has the potential to profile and deanonymize XR users, posing a significant threat to security and privacy in the metaverse.</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaverse/article"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2306.06459" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
+              <div class="card-img" style="min-height: 310px; background-image: url('img/thumb.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Inferring Private Personal Attributes of Virtual Reality Users from Head and Hand Motion Data</h4>
+                <h6 class="text-secondary">2023 &nbsp;|&nbsp; Vivek Nair &middot; Christian Rack &middot; Wenbo Guo &middot; Rui Wang &middot; Shuixian Li &middot; Brandon Huang &middot; Atticus Cull &middot; James F. O'Brien &middot; Marc Latoschik &middot; Louis Rosenberg &middot; Dawn Song | https://doi.org/10.48550/arXiv.2305.19198</h6>
+                <p class="text-justify">Motion tracking 'telemetry' data lies at the core of nearly all modern virtual reality (VR) and metaverse experiences. While generally presumed innocuous, recent studies have demonstrated that motion data actually has the potential to uniquely identify VR users. In this study, we go a step further, showing that a variety of private user information can be inferred just by analyzing motion data recorded from VR devices&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaverse/profiling"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2305.19198" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/MetaGuard/Profiling" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="card-img" style="background-image: url('img/ident.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>Unique Identification of 50,000+ VR Users from Head & Hand Motion</h4>
+                <h6 class="text-secondary">2023 &nbsp;|&nbsp; Vivek Nair &middot; Wenbo Guo &middot; Justus Mattern &middot; Rui Wang &middot; James F. O’Brien &middot; Louis Rosenberg &middot; Dawn Song</h6>
+                <p class="text-justify">With the recent explosive growth of interest and investment in VR, public attention has rightly shifted toward the unique security and privacy threats that these platforms may pose. While it has long been known that people reveal information about themselves via their motion, the extent to which this makes an individual globally identifiable within virtual reality has not yet been widely understood. In this study, we show that a large number of real VR users can be uniquely identified across multiple sessions using just their head and hand motion&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/vr-identification"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2302.08927" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/MetaGuard/Identification" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last">
+              <div class="card-img" style="background-image: url('img/sok.svg')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>SoK: Data Privacy in Virtual Reality</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Gonzalo Munilla Garrido &middot; Vivek Nair &middot; Dawn Song &nbsp;|&nbsp; https://doi.org/10.48550/arXiv.2301.05940</h6>
+                <p class="text-justify">The adoption of VR technologies has rapidly gained momentum in recent years as companies around the world begin to position the so-called "metaverse" as the next major medium for accessing and interacting with the internet. While consumers have become accustomed to a degree of data harvesting on the web, the real-time nature of data sharing in the metaverse indicates that privacy concerns are likely to be even more prevalent in the new "Web 3.0." Research into VR privacy has demonstrated that a plethora of sensitive personal information is observable by various would-be adversaries from just a few minutes of telemetry data. This paper aims to systematize knowledge on the landscape of VR privacy threats and countermeasures&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaverse-sok"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2301.05940" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="card-img" style="background-image: url('img/metadata-thumb.png')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>MetaData: Exploring the Unprecedented Privacy Risks of the Metaverse</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Vivek Nair &middot; Gonzalo Munilla Garrido &middot; Dawn Song &nbsp;|&nbsp; https://doi.org/10.48550/arXiv.2207.13176</h6>
+                <p class="text-justify">Thirty study participants playtested an innocent-looking "escape room" game in virtual reality (VR). Behind the scenes, an adversarial program had accurately inferred over 25 personal data attributes, from anthropometrics like height and wingspan to demographics like age and gender, within just a few minutes of gameplay. In this work, we illustrate how VR attackers can covertly ascertain dozens of personal data attributes from seemingly-anonymous users of popular metaverse applications&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metadata"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2207.13176" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/metaguard/metadata" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="card mt-4">
-            <div class="row align-items-center">
-              <div class="col-lg-8">
-                <div class="p-4">
-                  <h4>ItyFuzz: Snapshot-Based Fuzzer for Smart Contract</h4>
-                  <h6 class="text-secondary">2023 &nbsp;|&nbsp; Chaofan Shou &middot; Shangyin Tan &middot; Koushik Sen |&nbsp; https://arxiv.org/pdf/2306.17135.pdf</h6>
-                  <p class="text-justify">We introduce a novel snapshot-based fuzzer ItyFuzz for testing smart contracts. In ItyFuzz, instead of storing sequences of transactions and mutating from them, we snapshot states and singleton transactions. To explore interesting states, ItyFuzz introduces a dataflow waypoint mechanism to identify states with more potential momentum. ItyFuzz also incorporates comparison waypoints to prune the space of states. Because ItyFuzz has second-level response time to test a smart contract, it can be used for on-chain testing, which has many benefits compared to local development testing. ItyFuzz has been evaluated on real and hacked DeFi projects and shown to surpass existing fuzzers.&hellip;</p>
-                  <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://arxiv.org/pdf/2306.17135.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/fuzzland/ityfuzz" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
-                </div>
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
+              <div class="card-img" style="background-image: url('img/metaguard.png')">
               </div>
-
-              <div class="col-lg-4">
-                <div class="card-img" style="background-image: url('img/ityfuzz.png'); background-size: contain">
-                </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4>MetaGuard: Going Incognito in the Metaverse</h4>
+                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Vivek Nair &middot; Gonzalo Munilla Garrido &middot; Dawn Song &nbsp;|&nbsp; https://doi.org/10.48550/arXiv.2208.05604</h6>
+                <p class="text-justify">We present the first known method of implementing an "incognito mode" for VR. Our technique leverages local ε-differential privacy to quantifiably obscure sensitive user data attributes, with a focus on intelligently adding noise when and where it is needed most to maximize privacy while minimizing usability impact&hellip;</p>
+                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaguard"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2208.05604" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/metaguard/metaguard" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
               </div>
             </div>
           </div>
-
+        </div>
 
           <div class="card mt-4">
             <div class="row align-items-center">
@@ -159,7 +218,47 @@
               </div>
             </div>
           </div>
-          
+
+          <div class="card mt-4">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <div class="card-img" style="background-image: url('img/pianist-prot.png'); background-size: contain">
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="p-4">
+                  <h4>Pianist: Scalable zkRollups via Fully Distributed Zero-Knowledge Proofs</h4>
+                  <h6 class="text-secondary">2024 &nbsp;|&nbsp; Tianyi Liu &middot; Tiancheng Xie &middot; Jiaheng Zhang
+                    &middot; Dawn Song &middot; Yupeng Zhang
+                    &nbsp;|&nbsp; S&P 2024</h6>
+                  <p class="text-justify">
+                    In this work, we improve the scalability of these techniques by proposing new schemes of fully
+                    distributed ZKPs. Our schemes can improve the efficiency and the scalability of ZKPs using multiple
+                    machines, while the communication among the machines is minimal. With our schemes, the ZKP generation
+                    can be distributed to multiple participants in a model similar to the mining pools. Our protocols are
+                    based on Plonk, an efficient zero-knowledge proof system with a universal trusted setup. The first
+                    protocol is for data-parallel circuits.
+                    For computation of \(M\) sub-circuits of size \(T\) each, using \(M\) machines, the prover time is
+                    \(O(T\log
+                    T
+                    + M \log M)\), while the prover time of the original Plonk on a single machine is \(O(MT\log (MT))\).
+                    Our
+                    protocol incurs only \(O(1)\) communication per machine, and the proof size and verifier time are both
+                    \(O(1)\), the same as the original Plonk. Moreover, we show that with minor modifications, our second
+                    protocol can support general circuits with arbitrary connections while preserving the same proving,
+                    verifying, and communication complexity. The technique is general and may be of independent interest for
+                    other applications of ZKP.
+                  </p>
+                  <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/zkp/Pianist/pianist.html"><i
+                        class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a
+                      class="btn btn-secondary btn-sm" href="https://eprint.iacr.org/2023/1271"><i class="fa fa-file-lines"></i>&nbsp; Read
+                      Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/dreamATD/pianist-gnark"
+                      target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="card mt-4">
             <div class="row align-items-center">
               <div class="col-lg-4 order-lg-last">
@@ -172,40 +271,6 @@
                   <h6 class="text-secondary">2023 &nbsp;|&nbsp; Yu Gai* &middot; Liyi Zhou* &middot; Kaihua Qin &middot; Dawn Song &middot; Arthur Gervais &nbsp;|&nbsp; https://arxiv.org/pdf/2304.12749.pdf</h6>
                   <p class="text-justify">This paper presents a dynamic, real-time approach to detecting anomalous blockchain transactions. The proposed tool, BlockGPT, generates tracing representations of blockchain activity and trains from scratch a large language model to act as a real-time Intrusion Detection System. Unlike traditional methods, BlockGPT is designed to offer an unrestricted search space and does not rely on predefined rules or patterns, enabling it to detect a broader range of anomalies.&hellip;</p>
                   <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/blockchain-llm"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/pdf/2304.12749.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mt-4">
-            <div class="row align-items-center">
-              <div class="col-lg-4">
-                <div class="card-img" style="background-image: url('img/ident.png')">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="p-4">
-                  <h4>Unique Identification of 50,000+ VR Users from Head & Hand Motion</h4>
-                  <h6 class="text-secondary">2023 &nbsp;|&nbsp; Vivek Nair &middot; Wenbo Guo &middot; Justus Mattern &middot; Rui Wang &middot; James F. O’Brien &middot; Louis Rosenberg &middot; Dawn Song</h6>
-                  <p class="text-justify">With the recent explosive growth of interest and investment in VR, public attention has rightly shifted toward the unique security and privacy threats that these platforms may pose. While it has long been known that people reveal information about themselves via their motion, the extent to which this makes an individual globally identifiable within virtual reality has not yet been widely understood. In this study, we show that a large number of real VR users can be uniquely identified across multiple sessions using just head and hand motion&hellip;</p>
-                  <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/vr-identification"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2302.08927" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/MetaGuard/Identification" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mt-4">
-            <div class="row align-items-center">
-              <div class="col-lg-4 order-lg-last">
-                <div class="card-img" style="background-image: url('img/sok.svg')">
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="p-4">
-                  <h4>SoK: Data Privacy in Virtual Reality</h4>
-                  <h6 class="text-secondary">2022 &nbsp;|&nbsp; Gonzalo Munilla Garrido &middot; Vivek Nair &middot; Dawn Song &nbsp;|&nbsp; https://doi.org/10.48550/arXiv.2301.05940</h6>
-                  <p class="text-justify">The adoption of VR technologies has rapidly gained momentum in recent years as companies around the world begin to position the so-called "metaverse" as the next major medium for accessing and interacting with the internet. While consumers have become accustomed to a degree of data harvesting on the web, the real-time nature of data sharing in the metaverse indicates that privacy concerns are likely to be even more prevalent in the new "Web 3.0." Research into VR privacy has demonstrated that a plethora of sensitive personal information is observable by various would-be adversaries from just a few minutes of telemetry data. This paper aims to systematize knowledge on the landscape of VR privacy threats and countermeasures&hellip;</p>
-                  <p class="mb-0"><a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaverse-sok"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2301.05940" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a></p>
                 </div>
               </div>
             </div>
@@ -292,38 +357,6 @@ When compared to the state-of-the-art AC scheme for blockchains, ZEBRA reduces t
         <div class="card mt-4">
           <div class="row align-items-center">
             <div class="col-lg-4">
-              <div class="card-img" style="background-image: url('img/metadata-thumb.png')">
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <div class="p-4">
-                <h4>MetaData: Exploring the Unprecedented Privacy Risks of the Metaverse</h4>
-                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Vivek Nair &middot; Gonzalo Munilla Garrido &middot; Dawn Song &nbsp;|&nbsp; https://doi.org/10.48550/arXiv.2207.13176</h6>
-                <p class="text-justify">Thirty study participants playtested an innocent-looking "escape room" game in virtual reality (VR). Behind the scenes, an adversarial program had accurately inferred over 25 personal data attributes, from anthropometrics like height and wingspan to demographics like age and gender, within just a few minutes of gameplay. In this work, we illustrate how VR attackers can covertly ascertain dozens of personal data attributes from seemingly-anonymous users of popular metaverse applications&hellip;</p>
-                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metadata"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2207.13176" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/metaguard/metadata" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mt-4">
-          <div class="row align-items-center">
-            <div class="col-lg-4 order-lg-last">
-              <div class="card-img" style="background-image: url('img/metaguard.png')">
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <div class="p-4">
-                <h4>MetaGuard: Going Incognito in the Metaverse</h4>
-                <h6 class="text-secondary">2022 &nbsp;|&nbsp; Vivek Nair &middot; Gonzalo Munilla Garrido &middot; Dawn Song &nbsp;|&nbsp; https://doi.org/10.48550/arXiv.2208.05604</h6>
-                <p class="text-justify">We present the first known method of implementing an "incognito mode" for VR. Our technique leverages local ε-differential privacy to quantifiably obscure sensitive user data attributes, with a focus on intelligently adding noise when and where it is needed most to maximize privacy while minimizing usability impact&hellip;</p>
-                <p class="mb-0"><a class="btn btn-info btn-sm" href="https://rdi.berkeley.edu/metaverse"><i class="fa fa-bars"></i>&nbsp; Metaverse Research</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://rdi.berkeley.edu/metaguard"><i class="fa fa-arrow-up-right-from-square"></i>&nbsp; Learn More</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://arxiv.org/abs/2208.05604" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/metaguard/metaguard" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mt-4">
-          <div class="row align-items-center">
-            <div class="col-lg-4">
               <div class="card-img" style="background-image: url('img/mfkdf-t.png')">
               </div>
             </div>
@@ -369,14 +402,36 @@ When compared to the state-of-the-art AC scheme for blockchains, ZEBRA reduces t
             </div>
           </div>
         </div>
+
+
+
+
+
+        <div class="card mt-4">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <div class="p-4">
+                  <h4>ItyFuzz: Snapshot-Based Fuzzer for Smart Contract</h4>
+                  <h6 class="text-secondary">2023 &nbsp;|&nbsp; Chaofan Shou &middot; Shangyin Tan &middot; Koushik Sen |&nbsp; https://arxiv.org/pdf/2306.17135.pdf</h6>
+                  <p class="text-justify">We introduce a novel snapshot-based fuzzer ItyFuzz for testing smart contracts. In ItyFuzz, instead of storing sequences of transactions and mutating from them, we snapshot states and singleton transactions. To explore interesting states, ItyFuzz introduces a dataflow waypoint mechanism to identify states with more potential momentum. ItyFuzz also incorporates comparison waypoints to prune the space of states. Because ItyFuzz has second-level response time to test a smart contract, it can be used for on-chain testing, which has many benefits compared to local development testing. ItyFuzz has been evaluated on real and hacked DeFi projects and shown to surpass existing fuzzers.&hellip;</p>
+                  <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://arxiv.org/pdf/2306.17135.pdf" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a>&nbsp;<a class="btn btn-secondary btn-sm" href="https://github.com/fuzzland/ityfuzz" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card-img" style="background-image: url('img/ityfuzz.png'); background-size: contain">
+                </div>
+              </div>
+            </div>
+          </div>
+
       </div>
     </div>
     <div class="bg-dark text-white text-center py-2">
       <div class="container">
-        <p class="m-0">Copyright &copy;2022 UC Regents &nbsp;|&nbsp; Email us at <a href="mailto:rdi@berkeley.edu">rdi@berkeley.edu</a>.</p>
+        <p class="m-0">Copyright &copy;2022-2023 UC Regents &nbsp;|&nbsp; Email us at <a href="mailto:rdi@berkeley.edu">rdi@berkeley.edu</a>.</p>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
-

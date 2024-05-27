@@ -70,6 +70,81 @@
 
     <div class="bg-secondary py-5">
       <div class="container">
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
+              <div class="card-img"
+                style="min-height: 310px; background-image: url('img/silent-threshold-encryption-img.jpeg')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4><em>Threshold Encryption with Silent Setup
+                  </em></h4>
+                <h6 class="text-secondary">2024 &nbsp;|&nbsp; Sanjam Garg &middot; Dimitris Kolonelos
+                  &middot; Guru-Vamsi Policharla &middot; Mingyuan Wang | CRYPTO 2024
+                </h6>
+                <p class="text-justify">We build a concretely efficient threshold encryption scheme where the joint public
+                  key of a set of parties is computed as a deterministic function of their locally computed public keys,
+                  enabling a silent setup phase. By eliminating interaction from the setup phase, our scheme immediately
+                  enjoys several highly desirable features such as asynchronous setup, multiverse support, and dynamic
+                  threshold. <br> <br>
+  
+                  Prior to our work, the only known constructions of threshold encryption with silent setup relied on
+                  heavy cryptographic machinery such as indistinguishability Obfuscation or witness encryption for all of
+                  NP. Our core technical innovation lies in building a special purpose witness encryption scheme for the
+                  statement ``at least t parties have signed a given message''. Our construction relies on pairings and is
+                  proved secure in the Generic Group Model.
+                </p>
+                <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://eprint.iacr.org/2024/263"
+                    target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a><a
+                    class="btn btn-secondary btn-sm"
+                    href="https://github.com/guruvamsi-policharla/silent-threshold-encryption" target="_blank"><i
+                      class="fab fa-github"></i>&nbsp; View Repo</a></p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
+              <div class="card-img"
+                style="min-height: 310px; background-image: url('img/batched-threshold-encryption-img.jpeg')">
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="p-4">
+                <h4><em>Mempool Privacy via Batched Threshold Encryption: Attacks and Defenses
+                  </em></h4>
+                <h6 class="text-secondary">2024 &nbsp;|&nbsp; Arka Rai Choudhuri &middot; Sanjam Garg &middot; Julien Piet
+                  &middot; Guru-Vamsi Policharla | USENIX Security Symposium 2024
+                </h6>
+                <p class="text-justify">With the rising popularity of DeFi applications it is important to implement
+                  protections for regular users of these DeFi platforms against large parties with massive amounts of
+                  resources allowing them to engage in market manipulation strategies such as frontrunning/backrunning.
+                  Moreover, there are many situations (such as recovery of funds from vulnerable smart contracts) where a
+                  user may not want to reveal their transaction until it has been executed. As such, it is clear that
+                  preserving the privacy of transactions in the mempool is an important goal. <br><br>
+  
+                  In this work we focus on achieving mempool transaction privacy through a new primitive that we term
+                  batched-threshold encryption, which is a variant of threshold encryption with strict efficiency
+                  requirements to better model the needs of resource constrained environments such as blockchains. Unlike
+                  the naive use of threshold encryption, which requires communication proportional to to decrypt
+                  transactions with a committee of parties, our batched-threshold encryption scheme only needs
+                  communication. We additionally discuss pitfalls in prior approaches that use (vanilla) threshold
+                  encryption for mempool privacy.
+                </p>
+                <p class="mb-0"><a class="btn btn-secondary btn-sm" href="https://eprint.iacr.org/2024/669"
+                    target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a><a
+                    class="btn btn-secondary btn-sm"
+                    href="https://github.com/guruvamsi-policharla/batched-threshold-encryption" target="_blank"><i
+                      class="fab fa-github"></i>&nbsp; View Repo</a></p>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 		<div class="card mt-4">
           <div class="row align-items-center">
             <div class="col-lg-4 order-lg-last" style="padding-right: 10px;">
